@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中原吉他CYGC</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap");
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrapper {
+            height: 100%;
+            background-color: whitesmoke;
+            font-family: 'Noto Serif TC', serif;
+            max-height: 100%;
+        }
+
+        /* Navigation Bar start */
+        .navBar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px 0px #cccccc;
+        }
+
+        .navBar > ul {
+            list-style-type: none;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .navBar > nav >  ul > li {
+            float: left;
+        }
+
+        .nav-left {
+            border-right: 1px solid #E5C687;
+        }
+
+        .nav-right {
+            border-left: 1px solid #E5C687;
+        }
+
+        .nav-middle {
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+
+        .nav-left > a, .nav-right > a {
+            display: block;
+            color: #302B27;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+        }
+
+        .nav-middle > a {
+            display: block;
+            color: #302B27;
+            text-align: center;
+            padding: 0px 30px 0px 35px;
+            text-decoration: none;
+        }
+
+        .nav-left a:hover, .nav-right a:hover {
+            color: #E5C687;
+            transition-duration: 0.2s;
+        }
+        /* Navigation Bar end */
+
+        .content {
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donation {
+            font-family: 'cwTeXYen', sans-serif;
+            z-index: 1;
+        }
+
+        .donation > h1 {
+            /* color: rgb(255, 93, 93); */
+            text-align: center;
+        }
+
+        .donation > hr {
+            margin: 8px 0;
+        }
+
+        .donation > form > h3 {
+            margin: 8px 0;
+        }
+
+        .price {
+            background-color: whitesmoke;
+            border: none;
+            border-bottom: 1px solid;
+        }
+
+        .donation > form > input[type=text]{
+            margin-bottom: 8px;
+            padding: 6px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+
+        .buttonArea {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            color: whitesmoke;
+            background-color: rgb(255, 110, 110);
+            border: 1px solid rgb(255, 110, 110);
+            border-radius: 6px;
+            padding: 12px 24px;
+            margin: 10px 2px;
+        }
+
+        .button:hover {
+            position: absolute;
+            color: rgb(255, 110, 110);
+            background-color: whitesmoke;
+            border: 1px solid rgb(255, 110, 110);
+            transition-duration: 0.2s;
+            animation-name: buttonMove;
+            animation-duration: 0.5s;
+            cursor: pointer;
+        }
+
+        @keyframes buttonMove{
+            from{
+                left:0%;
+            }
+            to{
+                left:100px;
+            }
+        }
+
+        .heart {
+            position: absolute;
+            top: 40px;
+            left: 130px;
+            height: 350px;
+            width: 350px;
+            z-index: 0;
+        }
+
+        .footer {
+            display: flex;
+            height: 40px;
+            background-color: #302B27;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer > span {
+            font-size: 6px;
+            background: linear-gradient(to right, white, #302B27, #302B27);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li class="nav-left"><a href="activity.html">玩活動</a></li>
+                    <li class="nav-left"><a href="class.html">上社課</a></li>
+                    <li class="nav-middle"><a href="index.html">中原<br>吉他</a></li>
+                    <li class="nav-right"><a href="donate.html">做善事</a></li>
+                    <li class="nav-right"><a href="aboutus.html">關於我們</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="content">
+            <div>
+                <img src="/images/heart.png" class="heart">
+            </div>
+            <div class="donation">
+                <h1>善心捐款，讓愛不間斷</h1>
+                <hr>
+                <form>
+                    <h3>定期定額</h3>
+                    <input type="radio" name="donation" value="500">
+                    <label for="500">500</label>
+                    <input type="radio" name="donation" value="1000">
+                    <label for="1000">1000</label>
+                    <input type="radio" name="donation" value="2500">
+                    <label for="2500">2500</label>
+                    <input type="radio" name="donation" value="3600">
+                    <label for="3600">3600</label>
+                    <input type="radio" name="donation" value="other">
+                    <label for="other">
+                        每月 <input type="text" class="price"> 元
+                    </label>
+
+                    <h3>單筆捐款</h3>
+                    <input type="radio" name="donation" value="5000">
+                    <label for="5000">5000</label>
+                    <input type="radio" name="donation" value="10000">
+                    <label for="10000">10000</label>
+                    <input type="radio" name="donation" value="80000">
+                    <label for="80000">80000</label>
+                    <input type="radio" name="donation" value="999999999">
+                    <label for="999999999">999999999</label>
+                    <input type="radio" name="donation" value="other">
+                    <label for="other">
+                        單次 <input type="text" class="price"> 元
+                    </label>
+                </form>
+                <hr>
+                <form>
+                    <h3>信用卡付費資訊</h3>
+                    <label for="name">持卡人姓名：</label>
+                    <input type="text"><br>
+                    <label for="number">信用卡號碼：</label>
+                    <input type="text"><br>
+                    <label for="date">有效期限：</label>
+                    <input type="text">
+                    <label for="cvc">安全碼(CVC)：</label>
+                    <input type="text">
+
+                    <p>※我們致力於提供不安全的交易環境，確保您的信用卡資訊會洩漏出去。</p>
+                </form>
+                <div class="buttonArea">
+                    <button class="button">完成</button>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer">
+            <span>Copyright© 2020 還想不到打啥麼拉基郭睿驛拉基郭睿驛</span>
+        </footer>
+    </div>
+</body>
+</html>
