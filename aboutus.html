@@ -6,6 +6,7 @@
     <title>中原吉他CYGC</title>
     <style>
         @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap");
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
         * {
             margin: 0;
@@ -84,87 +85,66 @@
         }
 
         .people {
+            font-family: 'cwTeXYen', sans-serif;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 24px;
         }
-        
-        #line1{
-          border-style: dashed;
-          border-color:  #E5C687;
-          border-radius:25px;
 
+        .two-block {
+            display: flex;
+            justify-content: center;
+        }
+
+        .block {
+            display: flex;
+            border:#FFDD55 dashed ;
+            border-radius: 25px;
+            width: 30%;
+            margin: 10px;
+        }
+
+        .shit {
+            margin: 15px 10px 15px 15px;
+            justify-content: center;
+            color: rgb(0, 67, 167);
+        }
+
+        .shit-two {
+            margin: 15px 15px 15px 10px;
+        }
+
+        .selfIntro {
+            text-align: center;
+        }
+
+        .div-fb {
+            text-align: center;
         }
 
         .facebook{
-            width: 60px;
-            height: 60px;
-            border-radius: 50px;
+            outline: none;
+            color: white;
+            background-color: rgb(0, 67, 167);
+            /* padding: 6px 20px; */
+            width: 110px;
+            height: 45px;
+            border-radius: 10%;
             box-shadow: 0 0 5px #AAAAAA;
         }
 
+        .facebook:hover {
+            background-color: rgb(1, 53, 131);
+            cursor: pointer;
+        }
 
-
-        .pictureh{
+        .photo{
             width: 150px;
             height: 150px;
             border-radius: 20px;
-	        box-shadow: 0 0 10px rgba(0,0,0,2.00);
+            box-shadow: 0 0 10px rgba(0,0,0,2.00);
         }
-
-        .picturec{
-            width: 150px;
-            height: 150px;
-            border-radius: 20px;
-	        box-shadow: 0 0 10px rgba(0,0,0,2.00);
-            
-        }
-
-        .picturey{
-            width: 150px;
-            height: 150px;
-            border-radius: 20px;
-	        box-shadow:  0 0 10px rgba(0,0,0,2.00);
-          
-        }
-
-        .picturer{
-            width: 150px;
-            height: 150px;
-            border-radius: 20px;
-            box-shadow:  0 0 10px rgba(0,0,0,2.00);
-            
-        }
-
-        .groh{
-            display: flex;
-            border:#FFDD55 dashed ;
-            border-radius: 25px;
-            width: 25%;
-        }
-
-        .groc{
-            display: flex;
-            border:#FFDD55 dashed ;
-            border-radius: 25px;
-            width: 25%;
-        }
-
-        .groy{
-            display: flex;
-            border:#FFDD55 dashed ;
-            border-radius: 25px;
-            width: 25%;
-        }
-
-        .gror{
-            display: flex;
-            border:#FFDD55 dashed ;
-            border-radius: 25px;
-            width: 25%;
-        }
-
-        /* .shit{
-            text-align: center;
-        } */
   
         .footer {
             display: flex;
@@ -198,68 +178,87 @@
         </div>
         
         <div class="content">
-                   
             <div class="people">
-                <div class="groh">  
-                    <div class="shit">
-                        <img src="images/HO.jpg" class="pictureh">
-                         <a href="https://www.facebook.com/profile.php?id=100005122184900" target="_blank" >
-                        <img src="images/FB.jpg" class="facebook">
-                        </a>
-                        <h2>自我介紹</h2>
-                        吉他社大二 數學系轉到資管的程式菜鳥
-                    </div>
-                    <div class="shit2">
-                        <h2>心得</h2>
-                        我認為多媒體這堂課對於資管系是很重要的，要跟資工系做出區隔，
-                        除了我們有跨商學院的東西以外就只能靠設計更貼合使用者的介面去發展了。
-                    </div>
-                </div>   
+                <div class="two-block">
+                    <div class="block">  
+                        <div class="shit">
+                            <img src="images/HO.jpg" class="photo">
 
-                <div class="groc">  
-                    <div class="shit">
-                        <img src="images/GUO.jpg" class="pictureh">
-                         <a href="https://www.facebook.com/profile.php?id=100000422329400" target="_blank" >
-                        <img src="images/FB.jpg" class="facebook">
-                        </a>
-                        <h2>自我介紹</h2>
-                        從電資轉到資工的叛徒 吉他社前教學長
-                    </div>
-                    <div class="shit2">
-                        <h2>心得</h2>
-                        做網站真的是難在排版這些的，打的css的東西永遠都跟想像的不一樣，一試再試也常常試不出東西 到後來只能參考網路上的排版，還有code，也算是學到了很多東西，想要繼續研究。
-                    </div>
-                </div>   
-                <div class="groy">  
-                    <div class="shit">
-                        <img src="images/HUANG.jpg" class="pictureh">
-                         <a href="https://www.facebook.com/profile.php?id=100006051286765" target="_blank" >
-                        <img src="images/FB.jpg" class="facebook">
-                        </a>
-                        <h2>自我介紹</h2>
-                        每場表演必失誤 數學系轉到資管的轉系仔
-                    </div>
-                    <div class="shit2">
-                        <h2>心得</h2>
-                        多媒體程式設計是我學的第一個程式，在學習的過程遇到很多之前沒遇過的問題，像網頁排版。在學習程式的過稱中，看到自己打的那些程式語言變成網站上的內容時，讓我很有成就感！
-                    </div>
-                </div>   
+                            <p class="selfIntro">吉他社大二<br>數學系轉資管程式菜鳥</p>
 
-                <div class="gror">  
-                    <div class="shit">
-                        <img src="images/LO.jpg" class="pictureh">
-                         <a href="https://www.facebook.com/kimuratakuya.fanpages/" target="_blank" >
-                        <img src="images/FB.jpg" class="facebook">
-                        </a>
-                        <h2>自我介紹</h2>
-                        資深殺蚊顧問
-                    </div>
-                    <div class="shit2">
-                        <h2>心得</h2>
-                        原來做網頁不如想像容易，好像有很多方式可以做出同樣的畫面，但怎麼做才是好的（例如不易跑版或是明瞭的html/css寫法）。另外接觸到CSS的動畫效果，越深入研究越是讚歎這傢伙厲害之處，我要定下目標成為css動畫大師。
-                    </div>
-                </div>  
-            </div>
+                            <div class="div-fb">
+                                <a href="https://www.facebook.com/profile.php?id=100005122184900" target="_blank" >
+                                    <button class="facebook">facebook</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shit-two">
+                            <h2>心得：</h2>
+                            我認為多媒體這堂課對於資管系是很重要的，要跟資工系做出區隔，
+                            除了我們有跨商學院的東西以外就只能靠設計更貼合使用者的介面去發展了。
+                        </div>
+                    </div>   
+    
+                    <div class="block">  
+                        <div class="shit">
+                            <img src="images/GUO.jpg" class="photo">
+
+                            <p class="selfIntro">電資轉資工的叛徒<br>吉他社前教學長</p>
+
+                            <div class="div-fb">
+                               <a href="https://www.facebook.com/profile.php?id=100000422329400" target="_blank" >
+                                    <button class="facebook">facebook</button>
+                                </a> 
+                            </div>
+                            
+                        </div>
+                        <div class="shit-two">
+                            <h2>心得：</h2>
+                            做網站真的是難在排版這些的，打的css的東西永遠都跟想像的不一樣，一試再試也常常試不出東西 到後來只能參考網路上的排版，還有code，也算是學到了很多東西，想要繼續研究。
+                        </div>
+                    </div>   
+                </div><!-- .two-block -->
+
+                <div class="two-block">
+                    <div class="block">  
+                        <div class="shit">
+                            <img src="images/HUANG.jpg" class="photo">
+
+                            <p class="selfIntro">每場表演必失誤<br>數學系轉資管的轉系仔</p>
+
+                            <div class="div-fb">
+                                <a href="https://www.facebook.com/profile.php?id=100006051286765" target="_blank" >
+                                    <button class="facebook">facebook</button>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="shit-two">
+                            <h2>心得：</h2>
+                            多媒體程式設計是我學的第一個程式，在學習的過程遇到很多之前沒遇過的問題，像網頁排版。在學習程式的過程中，看到自己打的那些程式語言變成網站上的內容時，讓我很有成就感！
+                        </div>
+                    </div>   
+    
+                    <div class="block">  
+                        <div class="shit">
+                            <img src="images/LO.jpg" class="photo">
+
+                            <p class="selfIntro">資深殺蚊顧問<br>最近學會徒手抓蚊</p>
+
+                            <div class="div-fb">
+                                <a href="https://www.facebook.com/kimuratakuya.fanpages/" target="_blank" >
+                                    <button class="facebook">facebook</button>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="shit-two">
+                            <h2>心得：</h2>
+                            原來做網頁不如想像容易，好像有很多方式可以做出同樣的畫面，但怎麼做才是好的（例如不易跑版或是明瞭的html/css寫法）。另外接觸到CSS的動畫效果，越深入研究越是讚歎這傢伙厲害之處，我要定下目標成為css動畫大師。
+                        </div>
+                    </div>  
+                </div><!-- .two-block -->
+            </div><!-- .people -->
         </div>
         <footer class="footer">
             <span>Copyright© 2020 還想不到打啥麼拉基郭睿驛拉基郭睿驛</span>
