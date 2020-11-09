@@ -127,10 +127,11 @@
             border-radius: 6px;
             padding: 12px 24px;
             margin: 10px 2px;
+            outline: none;
         }
 
         .button:hover {
-            position: absolute;
+            position: relative;
             color: rgb(255, 110, 110);
             background-color: whitesmoke;
             border: 1px solid rgb(255, 110, 110);
@@ -141,11 +142,21 @@
         }
 
         @keyframes buttonMove{
-            from{
-                left:0%;
+            25%{
+                top: 730px;
+                left:500px;
             }
-            to{
-                left:100px;
+            50%{
+                top: 700px;
+                left:600px;
+            }
+            75%{
+                top: 770px;
+                left:450px;
+            }
+            100%{
+                top: 880px;
+                left:700px;
             }
         }
 
