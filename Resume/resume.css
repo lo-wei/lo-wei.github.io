@@ -50,16 +50,16 @@
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; */
- }
-/*
-@keyframes rotate{
-    from{transform: rotate(0deg)}
-    to{transform: rotate(359deg)}
-} */
+}
 
 .github:hover {
     transform: scale(15);
 }
+
+/* @keyframes rotate{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+} */
 
 .about-two > p {
     margin-top: 90px;
@@ -117,15 +117,8 @@
     height: 140px;
     width: 140px;
     transform: rotate(-90deg);
-    stroke-dasharray: 377; /* (2PI * r) */
-    stroke-dashoffset: 377;
-    animation: offsettozero 2s ease forwards;
-}
-
-.ring > svg > text {
-    x: 50%;
-    y: 50%;
-    text-anchor: middle;
+    stroke-dasharray: 314; /* (2PI * r) */
+    stroke-dashoffset: 314;
 }
 
 .ring > svg > circle {
@@ -136,10 +129,44 @@
     stroke-width: 20px;
     fill: transparent;
 }
+
+.ring.one > svg { /* front 65% */
+    animation: cir-ani-one 2s ease forwards;
+}
   
-@keyframes offsettozero {
+@keyframes cir-ani-one {
     to {
-        stroke-dashoffset: 100;
+        stroke-dashoffset: 110;
+    }
+}
+
+.ring.two > svg { /* azure 75% */
+    animation: cir-ani-two 2s ease forwards;
+}
+  
+@keyframes cir-ani-two {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+.ring.three > svg { /* backend 85% */
+    animation: cir-ani-three 2s ease forwards;
+}
+  
+@keyframes cir-ani-three {
+    to {
+        stroke-dashoffset: 47;
+    }
+}
+
+.ring.four > svg { /*  github 78% */
+    animation: cir-ani-four 2s ease forwards;
+}
+  
+@keyframes cir-ani-four {
+    to {
+        stroke-dashoffset: 70;
     }
 }
 
@@ -166,15 +193,78 @@
 .skill {
     height: 100%;
     border-radius: 10px;
-    /* animation: skillAni 2s ease forwards; */
 }
 
-.C {width: 120%; background-color: #4CAF50;} /* Green */
-.html {width: 60%; background-color: #2196F3;} /* Blue */
-.java {width: 40%; background-color: #f44336;} /* Red */
-.js {width: 80%; background-color:yellow;}
-.python {width: 110%; background-color: orange;}
-.sql {width: 50%; background-color: white;} /* Dark Grey */
+.C {
+    width: 0%; 
+    background-color: #4CAF50;
+    animation: skillC 2s ease forwards;
+}
+
+@keyframes skillC {
+    to {
+        width: 120%;
+    }
+}
+
+.html {
+    width: 0; 
+    background-color: #2196F3;
+    animation: skillhtml 2s ease forwards;
+}
+
+@keyframes skillhtml {
+    to {
+        width: 60%;
+    }
+}
+.java {
+    width: 0; 
+    background-color: #f44336;
+    animation: skilljava 2s ease forwards;
+}
+
+@keyframes skilljava {
+    to {
+        width: 40%;
+    }
+}
+
+.js {
+    width: 0;
+    background-color:yellow;
+    animation: skilljs 2s ease forwards;
+}
+
+@keyframes skilljs {
+    to {
+        width: 80%;
+    }
+}
+
+.python {
+    width: 0;
+    background-color: orange;
+    animation: skillpy 2s ease forwards;
+}
+
+@keyframes skillpy {
+    to {
+        width: 110%;
+    }
+}
+
+.sql {
+    width: 0;
+    background-color: white;
+    animation: skillsql 2s ease forwards;
+}
+
+@keyframes skillsql {
+    to {
+        width: 50%;
+    }
+}
 
 .portfolio > h1 {
     margin-top: 20px;
