@@ -41,25 +41,38 @@
 
 .link{
     text-decoration: none;
+    position: relative;
 }
 
 .github {
     width: 5%;
     transition-duration: 0.3s;
-    /* animation-name: rotate;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; */
+    position: relative;
+    animation: shake 0.2s infinite;
+}
+
+@keyframes shake {
+    25%{
+        top: 3px;
+        left: 3px
+    }
+    50%{
+        top: -2px;
+        left: -2px;
+    }
+    75%{
+        top: -2px;
+        left: 3px;
+    }
+    100%{
+        top: 3px;
+        left: -2px;
+    }
 }
 
 .github:hover {
     transform: scale(15);
 }
-
-/* @keyframes rotate{
-    from{transform: rotate(0deg)}
-    to{transform: rotate(359deg)}
-} */
 
 .about-two > p {
     margin-top: 90px;
