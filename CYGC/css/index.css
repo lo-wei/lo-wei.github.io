@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrapper {
+            height: 100%;
+            background-color: whitesmoke;
+            font-family: 'Noto Serif TC', serif;
+            max-height: 100%;
+            overflow: hidden;
+        }
+
+        /* Navigation Bar start */
+        .navBar {
+            /* position: fixed; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px 0px #cccccc;;
+        }
+
+        .navBar > ul {
+            list-style-type: none;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .navBar > nav >  ul > li {
+            float: left;
+        }
+
+        .nav-left {
+            border-right: 1px solid #E5C687;
+        }
+
+        .nav-right {
+            border-left: 1px solid #E5C687;
+        }
+
+        .nav-middle {
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+
+        .nav-left > a, .nav-right > a {
+            display: block;
+            color: #302B27;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+        }
+
+        .nav-middle > a {
+            display: block;
+            color: #302B27;
+            text-align: center;
+            padding: 0px 30px 0px 35px;
+            text-decoration: none;
+        }
+
+        .nav-left a:hover, .nav-right a:hover {
+            color: #E5C687;
+            transition-duration: 0.2s;
+        }
+        /* Navigation Bar end */
+
+        .content {
+            height: 588px;
+            /* padding: 50px 0px 90px 0px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            border: 3px solid #302B27;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 120px;
+            background: radial-gradient(circle at center,#E5C687 , #E5C687, whitesmoke);
+            transition-duration: 1s;
+        }
+
+        .circle:hover {
+            transition-duration: 1s;
+            border-radius: 5%;
+        }
+
+        .jazzGuitar {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            animation-name: rotate;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate{
+            from{transform: rotate(0deg)}
+            to{transform: rotate(359deg)}
+        }
+
+        .circle > hr {
+            width: 1750px;
+            height: 4px;
+            border: none;
+            background-color: #302B27;
+            position: absolute;
+            left: -500px;
+            transition: all 1s inherit;
+        }
+
+        .circle > hr:nth-child(2) {top: 43px;}
+        .circle > hr:nth-child(3) {top: 86px;}
+        .circle > hr:nth-child(4) {top: 129px;}
+        .circle > hr:nth-child(5) {top: 172px;}
+        .circle > hr:nth-child(6) {top: 215px;}
+        .circle > hr:nth-child(7) {top: 258px;}
+
+        .circle > hr:nth-child(2):hover{
+            animation-name: shake-one;
+            animation-duration: .3s;
+            background-color:#E5C687;
+            transition: all 1s inherit;
+        }
+
+        .circle > hr:nth-child(3):hover{
+            animation-name: shake-two;
+            animation-duration: .3s;
+            background-color: #E5C687;
+            transition: all 1s inherit;
+        }
+
+        .circle > hr:nth-child(4):hover{
+            animation-name: shake-three;
+            animation-duration: .3s;
+            background-color: #E5C687;
+            transition: all 1s inherit;
+        }
+
+        .circle > hr:nth-child(5):hover{
+            animation-name: shake-four;
+            animation-duration: .3s;
+            background-color: #E5C687;
+            transition: all 1s inherit;
+        }
+
+        .circle > hr:nth-child(6):hover{
+            animation-name: shake-five;
+            animation-duration: .3s;
+            background-color: #E5C687;
+            transition: all 1s inherit;
+        }
+
+        .circle > hr:nth-child(7):hover{
+            animation-name: shake-six;
+            animation-duration: .3s;
+            background-color: #E5C687;
+            transition: all 1s inherit;
+        }
+
+        @keyframes shake-one{ 
+            /* original-top: 43px */
+            25%{
+                top: 39px;
+            }
+            100%{
+                top: 47px;
+            }
+        }
+
+        @keyframes shake-two{
+            /* original-top: 86px */
+            25%{
+                top: 90px;
+            }
+            100%{
+                top: 82px;
+            }
+        }
+
+        @keyframes shake-three{
+            /* original-top: 129px */
+            25%{
+                top: 133px;
+            }
+            100%{
+                top: 125px;
+            }
+        }
+
+        @keyframes shake-four{
+            /* original-top: 172px */
+            25%{
+                top: 176px;
+            }
+            100%{
+                top: 168px;
+            }
+        }
+
+        @keyframes shake-five{
+            /* original-top: 215px */
+            25%{
+                top: 219px;
+            }
+            100%{
+                top: 211px;
+            }
+        }
+
+        @keyframes shake-six{
+            /* original-top: 258px */
+            25%{
+                top: 261px;
+            }
+            100%{
+                top: 254px;
+            }
+        }
+
+        .video {
+            display: flex;
+            z-index: 999;
+            box-shadow: 0px 0px 8px #888888;
+        }
+
+        .footer {
+            display: flex;
+            height: 40px;
+            background-color: #302B27;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer > span {
+            font-size: 6px;
+            background: linear-gradient(to right, white, #302B27, #302B27);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
